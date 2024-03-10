@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Droid+Sans+Mono&display=swap" rel="stylesheet">
+  </head>
+  <title>Article Page - CypherCore Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black; /* Set the background color to black */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .centered-image {
+      background-image: url('term1.webp'); /* Set the background image */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Do not repeat the background image */
+      background-size: contain; /* Scale the image as large as possible without stretching the image */
+      width: 100%; /* Set the width of the image to 100% of its container */
+      height: 100%; /* Set the height of the image to 100% of its container */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .terminal {
+  position: relative; /* Position the terminal relative to its normal position */
+  display: flex;
+  flex-direction: column;
+  background-color:black;
+  color: #ffff99; /* Set the color to a lighter yellow */
+  font-family: 'Droid Sans Mono', monospace; /* Set the font to Droid Sans Mono, with a fallback to the default monospace font */
+  padding: 30px;
+  width: 500px; /* Set a fixed width */
+  height: 350px; /* Set a fixed height */
+  overflow: auto;
+  top: -110px; /* Move the terminal 50px down from its normal position */
+  right: -10px; /* Move the terminal 50px to the right from its normal position */
+}
+    .terminal-header {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .terminal-content ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .terminal-content li {
+      cursor: pointer;
+    }
+    #article-list a {
+  color: yellow;
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+  <div class="centered-image">
+    <div class="terminal">
+      <div class="terminal-header">Articles</div>
+      <div class="terminal-content">
+        <ul id="article-list">
+          <!-- Articles will be populated here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    const articles = [
+  { title: 'Lurie Attack', author: 'Matt Yu', date: '3/10/2024', file: 'lurie.html' },
+  { title: 'Article 2', author: 'Author 2', date: 'Date 2', file: 'article2.html' },
+  { title: 'Article 3', author: 'Author 3', date: 'Date 3', file: 'article3.html' },
+  { title: 'Article 4', author: 'Author 4', date: 'Date 4', file: 'article4.html' },
+];
+    const articleList = document.getElementById('article-list');
+
+    articles.forEach((article) => {
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
+      link.textContent = `${article.title} ${article.author} ${article.date}`;
+      link.href = article.file;
+      listItem.appendChild(link);
+      articleList.appendChild(listItem);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+Lurie Children’s Hospital detected a breach of its systems on January 31, 2024. Lurie Children’s is one of the top-ranked pediatric hospitals in the country and one of the only Level I Pediatric Trauma Centers in all of Illinois… and it was forced to operate on pen and paper.  Its patients include children with terminal illnesses and children requiring life-saving surgeries.
+
+Attack path:
+The attack targeted the hospital's MyChart electronic records system, leading to its temporary shutdown and the implementation of manual processes. As a result, patients experienced longer wait times for prescription requests, highlighting the far-reaching consequences of ransomware attacks on critical healthcare services.
+
+The MyChart electronic system has been the target or the affected target of multiple RaaS groups attacks such as in the instance of Virginia Mason Franciscan Health (), Norton HealthCare (AlphV,Black cat's attack), Laurie's Children Hospital, and CommonSpirit Health, Tampa General Hospital, Scripps Health, St Margaret's
+
+The statement did little to assuage the anger of customers across the U.S. who reported having issues at their local hospital or with their doctor. Several patients said their doctors were having problems accessing the MyChart tool, which is produced by a company called Epic Systems. 
+
+An Epic Systems spokesperson said the outages were “an isolated incident with one customer: CommonSpirit Health.”
+
+However it is doubtful. Taking a look at Epic System Services, we can see that they are one of the primary providers for the Health Tools and electronic health records , https://signin.epic.com/adfs/ls/?wa=wsignin1.0&wtrealm=https%3a%2f%2fuserweb.epic.com%2f&wctx=rm%3d1%26id%3dpassive%26ru%3d%252F&wct=2024-03-09T06%3a08%3a46Z&wreply=https%3a%2f%2fuserweb.epic.com%2f
+We can see that most affected hospital entities utilize some sort of Epic System Software. 
+
+The EHR market is very concentrated, and this will increase the risk of cyberattacks.  It is very possible that the Affiliates involved with these RaaS groups are actively exploiting or seeking vulnerabilities in Epic System Software. If ransomware, as a service group, finds a flaw in Epic or already found flaws within their software, it could launch numerous simultaneous attacks through its affiliates.
+
+And such exploitation has 100% been already confirmed to plague epic software In the past. Security researchers have discovered CVE-2016-6272 which allows EPIC MyChart to suffer from a remote XPath injection vulnerability. https://www.exploit-db.com/exploits/44098
+
+These RaaS groups are potentially redistributing unpatched software exploits and other techniques amongst their affiliates. Besides gaining initial entry phishing, social engineering and pivoting through machines using lateral movement, it is important to consider that these RaaS Groups and their Affiliates have been targeting EHR organizations that are highly concentrated on using the same proprietary software (EpicCare, MyChart, RCM, Healthy Planet, Tapestry, and Mobile Interfaces.)
+
+Rhysida, a Ransomware-as-a-Service (RaaS) group, first emerged in May of 2023 and has since become one of the more prevalent threats in the cybersecurity landscape. The group engages in data exfiltration for double extortion, maintaining both a leaks site and a victim support portal on TOR. 
+
+The group utilizes double extortion tactics, where sensitive data is copied from the victim’s network before file encryption and payments are required to obtain the keys to decrypt data and prevent the release or sale of the stolen data.
+
+The group is an upcoming player in the ransomware market but is a well-established group that conducted at least 74 attacks in 2023 – around 2% of all ransomware attacks globally, and last year was behind 4% of attacks on the healthcare sector.
+
+The group deploys its ransomware through various methods, including Cobalt Strike frameworks and phishing campaigns. Analysis of Rhysida ransomware samples suggests that the group is still in the early stages of development, lacking certain standard features found in contemporary ransomware.

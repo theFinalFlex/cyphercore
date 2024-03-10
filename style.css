@@ -1,0 +1,28 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.background-image {
+    position: relative; /* Make this a positioned ancestor for absolute positioning */
+    background-image: url('your-background-image-url.jpg'); /* Replace with your actual background image URL */
+    height: 100vh; /* Use viewport height to ensure full screen coverage */
+    background-position: center bottom; /* Align the background to the bottom center */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure background covers the entire screen */
+}
+
+.storefront {
+    position: absolute; /* Position the storefront image absolutely within its parent */
+    bottom: 0; /* Align the bottom of the image with the bottom of its parent */
+    background-image: url('store.png'); /* Direct link to the uploaded storefront image */
+    width: 50vw; /* Use viewport width for responsive sizing, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    background-position: center bottom; /* Align the background to the bottom center */
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensure the storefront image maintains its aspect ratio */
+    left: 50%; /* Center the storefront image horizontally */
+    transform: translateX(-50%); /* Adjust horizontal positioning for centering */
+}
