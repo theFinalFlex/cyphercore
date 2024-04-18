@@ -16,20 +16,80 @@
   </style>
 </head>
 <body>
-  <h1>Lurie Attack</h1>
-  <p>Lurie Children’s Hospital detected a breach of its systems on January 31, 2024. Lurie Children’s is one of the top-ranked pediatric hospitals in the country and one of the only Level I Pediatric Trauma Centers in all of Illinois… and it was forced to operate on pen and paper. Its patients include children with terminal illnesses and children requiring life-saving surgeries.</p>
+  <!DOCTYPE html>
+<html>
+	<head>
+		<title>Codebeautify.org Text to HTML Converter</title>
+	</head>
+	<body>
+		<<p>
+ 
+Introduction: On January 31, 2024, Lurie Children’s Hospital, renowned for its exceptional pediatric care, learned that it fell victim to a ransomware attack. This attack not only disrupted the hospital's operations but also shed light on the security vulnerabilities of Healthcare IT systems and their accompanying EHR services.
+ 
+Monitoring and Insights: At Cyphercore, we closely monitored the developments surrounding the incident due to its implications for affected members and the broader healthcare digital landscape. The Lurie Children's hospital attack provided valuable insights into the challenges confronted by healthcare organizations, which go beyond the cybersecurity of healthcare institutions and raise questions about the proprietary software that these systems run on.
+ 
+Investigation of the Cyber Attack: Digging deeper into the cyber attack on LurieLaurie's Children's Hospital has led us to investigate the threat actors, methods of exploitation, and or proposed vulnerabilities of the incident.
+ 
+Explanation of RaaS Cybercrime: It is no surprise that most cybercriminals resort to using Ransomware as a lucrative means of exfiltrating funds from victims. These cybercriminal gangs are known as Ransomware-as-a-Service Groups or RaaS, a phrasal template for their business model where ransomware operators write software, and affiliates pay to launch attacks using said software. Affiliates can earn payouts without having to develop the ransomware themselves, while operators can directly make a profit from their affiliates.
+ 
+These affiliates are often threat actors who are paid a majority of the cut. As stated by Craig Jones, VP of SecOps at Ontinue, groups such as Qilin affiliates are paid 80 to 85% of the share pocketed, and BlackCat affiliates have been earning 80 to 90% of the take. (source)
+ 
+Threat Actor in This Cyber Attack: The main threat actor taking responsibility for this attack is Rhysida. Rhysida, a Ransomware-as-a-Service (RaaS) group, first emerged in May of 2023 and has since become one of the more prevalent threats in the cybersecurity landscape. The group engages in data exfiltration for double extortion, maintaining both a leaks site and a victim support portal on TOR.
+ 
+The group utilizes double extortion tactics, where sensitive data is copied from the victim’s network before file encryption, and payments are required to obtain the keys to decrypt data and prevent the release or sale of the stolen data. The group is an upcoming player in the ransomware market but is a well-established group that conducted at least 74 attacks in 2023 – around 2% of all ransomware attacks globally, and last year was behind 4% of attacks on the healthcare sector.
+ 
+Attack Timeline: The cyberattack on Lurie Children's Hospital began with a network breach detected between March 29 and April 14, 2023. The extent of the attack was not fully understood until many affected patients were notified on April 28. In the immediate aftermath, Lurie Children’s Surgical Foundation reported a "Hacking/IT Incident" on August 8, 2023, which affected the "Network Server," as disclosed to the U.S. Department of Health and Human Services.
+ 
+During this period, the hospital's staff faced significant operational disruptions. An HR representative conveyed the challenges they faced due to the loss of access to critical applications, "Definitely, lost access to applications that were essential to my role and went days without any access." This forced the staff to pivot swiftly to alternative methods, using paper-based systems for timekeeping and patient charting, underscoring the hospital's quick adaptation to maintain patient care continuity.
+ 
+While external communications were compromised, internal systems like Outlook and Office 365 applications remained operational, albeit with limited functionality, as the HR representative stated, "From my understanding everything was down. We were still able to use Outlook and the Office 365 apps, however, only internally."
+ 
+This cyber incident created a dynamic and unpredictable environment, with protocol changes occurring daily. The HR representative recalled, "Additionally, things were changing every day so one day something worked and the next day we were told to use or not use something."
+ 
+According to a nurse interviewed, the medical staff had limited information and often learned about the status of the systems from the news. Despite these challenges, they continued to provide patient care, reverting to paper processes when the hospital's MyChart electronic records system was taken offline. The nurse noted that the systems were down for about a month but were restored in the last two weeks, a testament to the hospital's resilience and crisis management capabilities.
+ 
+On January 31, 2024, it was discovered that the disruption was the result of a ransomware attack, leading to the shutdown of the hospital’s phone, email, and medical records systems. This marked a significant turning point in addressing the cyberattack's ramifications and implementing recovery measures.
+ 
+As of March 8, 2024, data from Lurie Children’s Hospital was reported to have been sold on Rhysida's site, signaling the potential end of this particular cyber threat's immediate impacts but not the end of its lasting implications.This timeline provides a detailed account of events, incorporating the HR person's perspective on the operational challenges and the nurse's remark on the duration of the outage, thus offering a comprehensive view of the cyberattack's impact on the hospital.
+ 
+Based on what we can source online, it is reported that the LurieLaurie's Network Server was breached sometime between March 29 to April 14 of 2023. Many affected patients found out on April 28. As of August 8 of 2023, Lurie Children’s Surgical Foundation reported to the U.S. Department of Health and Human Services that it suffered a "Hacking/IT Incident" which affected the "Network Server". WTTW Reports that the hospital shut down its own systems for phone, email, and medical records once the breach was "discovered" on Jan. 31 (source). As of 3/8, the data of Lurie Children’s Hospital on Rhysida's site has been sold.
+ 
 
-  <h2>Attack path:</h2>
-  <p>The attack targeted the hospital's MyChart electronic records system, leading to its temporary shutdown and the implementation of manual processes. As a result, patients experienced longer wait times for prescription requests, highlighting the far-reaching consequences of ransomware attacks on critical healthcare services.</p>
+ 
+Two Potential Attack Vectors: The Rhysida group deploys its ransomware through various methods, including Cobalt Strike frameworks and phishing campaigns. Analysis of Rhysida ransomware samples suggests that the group is still in the early stages of development, lacking certain standard features found in contemporary ransomware.
+ 
 
-  <p>The MyChart electronic system has been the target or the affected target of multiple RaaS groups attacks such as in the instance of Virginia Mason Franciscan Health (), Norton HealthCare (AlphV,Black cat's attack), Laurie's Children Hospital, and CommonSpirit Health, Tampa General Hospital, Scripps Health, St Margaret's</p>
+ 
+The cyberattack specifically aimed at compromising the hospital's MyChart electronic records system, resulting in its forced temporary shutdown and the adoption of manual operational procedures. This disruption directly translated to prolonged wait times for patients seeking prescription requests, revealing the ramifications of ransomware assaults on healthcare services.
+ 
+Two Major Potential Vulnerabilities: Identified by CypherCore include not just Lurie's Hospital IT infrastructure but also its supply chain company and proprietary software, Epic Systems and its software (EpicCare, MyChart, RCM, Healthy Planet, Tapestry, and Mobile Interfaces).
+ 
+Potential Supply Chain Risk: Upon further investigation, not just the Rhysida attack, but the MyChart electronic system has been the affected target of multiple RaaS attacks such as in the instance of Virginia Mason Franciscan Health, Norton HealthCare (AlphV, Black cat's attack), LurieLaurie's Children Hospital, and CommonSpirit Health, Tampa General Hospital, Scripps Health Hospital, and in the case of St. Margaret's. (source)
+ 
+Having critical information bundled up on one service such as MyChart and an overreliance on one vendor (Epic systems) creates a Single Point Of Failure event that renders Private Health Information unavailable to hospital institutions in the event of an attack, creating major disruptions and negatively impacting patients.
+ 
+Examining Epic System Services: Reveals their significant role as the primary providers of health tools, software, and electronic health records for healthcare providers across the United States. Despite lacking concrete evidence, it's notable that many hospitals affected by cyberattacks rely on Epic System Software. While CypherCore refrains from asserting causation due to limited incident response documentation, it's essential to acknowledge the concentration of the EHR market, heightening the risk of cyberattacks.
+ 
+Ignoring the potential exploitation of flaws in Epic System Software by RaaS threat actors would be imprudent, given that 78% of all patients in the US hold their medical records with Epic. If ransomware groups identify or have already identified vulnerabilities within Epic's software, they could exploit them to orchestrate extortion/exfiltration attacks or launch supply chain attacks that are embedded into their proprietary software. To mitigate such risks, Epic Systems should reconsider their stance on bug bounties, incentivizing the disclosure of exploits, as currently, their system lacks compensation for CVEs.
+ 
+Previous exploitations have already been confirmed to plague epic software in the past. In 2016, Security researchers discovered CVE-2016-6272 which allows EPIC MyChart to suffer from a remote XPath injection vulnerability. Although such exploits have been patched, such exploitation of these proprietary software demonstrates Epic Systems is not without its flaws and without incentive to improve the security of their software, creates a risk for the concentration of public health providers utilizing their software.
+ 
+These RaaS groups are potentially redistributing unpatched software exploits and other techniques among their affiliates. Besides gaining initial entry phishing, social engineering, and pivoting through machines using lateral movement, it is important to consider that these RaaS Groups and their Affiliates have been targeting EHR organizations that are highly concentrated on using the same proprietary software.
+ 
+Opportunities for Enhancement: Lurie's Children's Hospital should actively take a cautious stance towards scalability and adjust their internal security to reflect their security posture. If utilizing the SPOF (Epic Systems) cannot be avoided, then it is advised that they should deprovision IT access to internal Network servers to address potential phishing attempts, conduct proper employee security practices, close off and disable access to any unnecessary high level shell scripting interfaces to prevent lateral movement and Remote Code execution. Doing so will safeguard the security and confidentiality of the institution and similar healthcare providers.
+ 
 
-  <p>The statement did little to assuage the anger of customers across the U.S. who reported having issues at their local hospital or with their doctor. Several patients said their doctors were having problems accessing the MyChart tool, which is produced by a company called Epic Systems.</p>
+ 
 
-  <p>An Epic Systems spokesperson said the outages were “an isolated incident with one customer: CommonSpirit Health.”</p>
+ 
 
-  <p>However it is doubtful. Taking a look at Epic System Services, we can see that they are one of the primary providers for the Health Tools and electronic health records , <a href="https://signin.epic.com/adfs/ls/?wa=wsignin1.0&wtrealm=https%3a%2f%2fuserweb.epic.com%2f&wctx=rm%3d1%26id%3dpassive%26ru%3d%252F&wct=2024-03-09T06%3a08%3a46Z&wreply=https%3a%2f%2fuserweb.epic.com%2f">https://signin.epic.com/adfs/ls/?wa=wsignin1.0&wtrealm=https%3a%2f%2fuserweb.epic.com%2f&wctx=rm%3d1%26id%3dpassive%26ru%3d%252F&wct=2024-03-09T06%3a08%3a46Z&wreply=https%3a%2f%2fuserweb.epic.com%2f</a>
-  We can see that most affected hospital entities utilize some sort of Epic System Software.</p>
+ 
 
+ 
+
+ 
+	</p>
+	</body>
+</html>
 </body>
 </html>
